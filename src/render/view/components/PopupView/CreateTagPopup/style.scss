@@ -1,0 +1,30 @@
+@import '../../../scss/constants.scss';
+@import '../../../scss/mixin.scss';
+
+.create-tag-popup {
+  @include createPopup($tagWidth - 20px, 100px);
+
+  position: absolute;
+  left: 10px;
+  bottom: $tagAddHeight;
+  z-index: 10;
+}
+
+.ctp-close {
+  @include createPopupClose;
+}
+
+.ctp-name {
+  @include createPopupTagName;
+}
+
+.ctp-name-input {
+  @include createPopupTagInput;
+  margin-top: 10px;
+}
+
+.ctp-confirm {
+  @include createPopupConfirm;
+  margin-top: 10px;
+  margin-left: 150px;
+}

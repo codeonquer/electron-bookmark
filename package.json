@@ -1,0 +1,40 @@
+{
+  "name": "bookmark",
+  "version": "1.0.0",
+  "description": "bookmark",
+  "keywords": [
+    "bookmark"
+  ],
+  "author": "codeonquer",
+  "main": "main.js",
+  "license": "ISC",
+  "scripts": {
+    "dev": "BUILD_ENV=development webpack --config webpack.config.js --watch",
+    "build": "BUILD_ENV=production webpack --config webpack.config.js",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^2.1.1",
+    "electron": "^8.0.2",
+    "electron-builder": "^22.3.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}

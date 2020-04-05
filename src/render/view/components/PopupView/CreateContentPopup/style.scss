@@ -1,0 +1,40 @@
+@import '../../../scss/constants.scss';
+@import '../../../scss//mixin.scss';
+
+.create-content-popup {
+  @include createPopup($contentWidth - 20px, 180px);
+
+  position: absolute;
+  left: $tagWidth + 10px;
+  top: $contentControlHeight;
+  z-index: 10;
+}
+
+.ccp-close {
+  @include createPopupClose;
+}
+
+.ccp-name {
+  @include createPopupTagName;
+}
+
+.ccp-name-input {
+  @include createPopupTagInput;
+  margin-top: 10px;
+}
+
+.ccp-url {
+  @include createPopupTagName;
+  margin-top: 10px;
+}
+
+.ccp-url-input {
+  @include createPopupTagInput;
+  margin-top: 10px;
+}
+
+.ccp-confirm {
+  @include createPopupConfirm;
+  margin-top: 20px;
+  margin-left: 240px;
+}

@@ -1,0 +1,70 @@
+@import './constants.scss';
+
+@mixin createPopup ($width, $height) {
+  width: $width;
+  height: $height;
+
+  padding: $createPopupPadding;
+
+  background-color: $createPopupBackColor;
+  border: $createPopupBorder;
+  border-radius: $createPopupBorderRadius;
+}
+
+@mixin createPopupClose {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+
+  width: 15px;
+  height: 15px;
+
+  font-size: 13px;
+  color: #848484;
+  text-align: center;
+  line-height: 15px;
+}
+
+@mixin createPopupTagName {
+  position: relative;
+  width: 100%;
+  height: 18px;
+
+  font-size: 14px;
+  color: #848484;
+  text-align: left;
+  line-height: 18px;
+}
+
+@mixin createPopupTagInput {
+  position: relative;
+  width: 100%;
+  height: 24px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #414141 2px;
+
+  font-size: 17px;
+  color: #d4d4d4;
+  text-align: left;
+  line-height: 24px;
+}
+
+@mixin createPopupConfirm {
+  position: relative;
+  width: 50px;
+  height: 15px;
+
+  font-size: 13px;
+  color: #848484;
+  text-align: center;
+  line-height: 15px;
+}
+
+@mixin textEllipsis {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

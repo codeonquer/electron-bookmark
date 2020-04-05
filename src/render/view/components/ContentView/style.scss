@@ -1,0 +1,147 @@
+@import '../../scss/constants.scss';
+@import '../../scss/mixin.scss';
+
+.contents {
+  position: relative;
+  width: $contentWidth;
+  height: 100vh;
+
+  background-color: $contentBackColor;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.c-control {
+  position: relative;
+  width: 100%;
+  height: $contentControlHeight;
+
+  display: flex;
+  padding-left: 20px;
+}
+
+.cc-input {
+  position: relative;
+  width: $contentInputWidth;
+  height: $contentInputHeight;
+
+  margin-top: 10px;
+  padding-left: 10px;
+
+  border: none;
+  background-color: $contentInputBackColor;
+
+  font-size: $contentInputFontSize;
+  color: $contentInputFontColor;
+  text-align: left;
+  line-height: $contentInputHeight;
+}
+
+.cc-query {
+  position: relative;
+  width: $contentQueryWidth;
+  height: $contentQueryHeight;
+
+  margin-top: 11px;
+  margin-left: 10px;
+
+  background-color: $contentQueryBackColor;
+
+  font-size: $contentQueryFontSize;
+  font-weight: 500;
+  color: $contentQueryFontColor;
+  text-align: center;
+  line-height: $contentQueryHeight;
+}
+
+.cc-add {
+  position: relative;
+  width: $contentAddWidth;
+  height: $contentAddHeight;
+
+  margin-top: 11px;
+  margin-left: 10px;
+
+  background-color: $contentAddBackColor;
+
+  font-size: $contentAddFontSize;
+  font-weight: bolder;
+  color: $contentAddFontColor;
+  text-align: center;
+  line-height: $contentAddHeight;
+}
+
+.c-empty {
+  position: relative;
+  width: 100%;
+  flex: 1;
+
+  padding-top: 150px;
+
+  font-size: $contentEmptyFrotSize;
+  color: $contentEmptyFrotColor;
+  text-align: center;
+}
+
+.c-ul {
+  position: relative;
+  width: 100%;
+  flex: 1;
+
+  list-style: none;
+  overflow: auto;
+}
+
+.c-li {
+  position: relative;
+  width: 100%;
+  height: 80px;
+
+  padding: 12px 18px 0;
+}
+
+.c-li-active {
+  background-color: #454545;
+}
+
+.c-li-name {
+  position: relative;
+  width: 100%;
+  height: 18px;
+
+  font-size: 16px;
+  color: #dadada;
+  text-align: left;
+  line-height: 18px;
+
+  @include textEllipsis;
+}
+
+.c-li-url {
+  position: relative;
+  width: 100%;
+  height: 14px;
+
+  margin-top: 5px;
+
+  font-size: 14px;
+  color: #b5b5b5;
+  text-align: left;
+  line-height: 14px;
+
+  @include textEllipsis;
+}
+
+.c-li-ts {
+  position: relative;
+  width: 100%;
+  height: 14px;
+
+  margin-top: 5px;
+
+  font-size: 14px;
+  color: #b5b5b5;
+  text-align: left;
+  line-height: 14px;
+}

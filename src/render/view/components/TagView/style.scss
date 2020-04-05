@@ -1,0 +1,86 @@
+@import '../../scss/constants.scss';
+@import '../../scss/mixin.scss';
+
+.tags {
+  position: relative;
+  width: $tagWidth;
+  height: 100vh;
+
+  background-color: $tagBackColor;
+  border-right: solid #323232 1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.t-title {
+  position: relative;
+  width: 100%;
+  height: $tagTitleHeight;
+
+  padding-left: 10px;
+
+  font-size: $tagTitleFontSize;
+  color: $tagTitleFontColor;
+  text-align: left;
+  line-height: $tagTitleHeight;
+}
+
+.t-empty {
+  position: relative;
+  width: 100%;
+  flex: 1;
+
+  padding-top: 150px;
+
+  font-size: $tagEmptyFontSize;
+  color: $tagEmptyFontColor;
+  text-align: center;
+}
+
+.t-ul {
+  position: relative;
+  width: 100%;
+  flex: 1;
+
+  list-style: none;
+  overflow: auto;
+}
+
+.t-li {
+  position: relative;
+  width: 100%;
+  height: 32px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 15px;
+  color: $tagTitleFontColor;
+  text-align: left;
+  line-height: 30px;
+
+  @include textEllipsis;
+}
+
+.t-li-active {
+  background-color: #4a4a4a;
+}
+
+.t-add {
+  position: relative;
+  width: 100%;
+  height: $tagAddHeight;
+
+  padding-left: 20px;
+
+  font-size: $tagAddFontSize;
+  color: $tagAddFontColor;
+  text-align: left;
+  line-height: $tagAddHeight;
+}
+
+.ta-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
