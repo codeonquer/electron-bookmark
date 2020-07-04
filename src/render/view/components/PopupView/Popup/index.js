@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { createPortal } from 'react-dom';
+import PropTypes from 'prop-types';
 
 class Popup extends Component {
+  static propTypes = {
+    children: PropTypes.any
+  }
+
   constructor (props) {
     super(props);
 

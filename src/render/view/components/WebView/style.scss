@@ -1,5 +1,14 @@
-.webframe {
+.web-area {
   position: relative;
   flex: 1;
   height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.webframe {
+  position: relative;
+  flex: 1;
+  width: 100%;
 }

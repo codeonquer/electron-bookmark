@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import PropTyeps from 'prop-types';
 import Popup from '../Popup';
 
 import './style.scss';
 
 class CreateTagPopup extends Component {
+  static propTypes = {
+    addTag: PropTyeps.func,
+    flipCreateTagPopup: PropTyeps.func
+  }
+
   constructor (props) {
     super(props);
 

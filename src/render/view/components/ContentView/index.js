@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ContentItem from './ContentItem';
 import './style.scss';
 
 class ContentView extends Component {
+  static propTypes = {
+    contents: PropTypes.object,
+    currentContentIndex: PropTypes.number,
+    flipCreateContentPopup: PropTypes.func,
+    setCurrentContentIndex: PropTypes.func,
+    setCurrentContent: PropTypes.func
+  }
+
   constructor (props) {
     super(props);
 

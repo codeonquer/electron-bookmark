@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './style.scss';
 
 class WebView extends Component {
+  static propTypes = {
+    content: PropTypes.object
+  }
+
   render () {
     const { content } = this.props;
 
@@ -10,8 +15,17 @@ class WebView extends Component {
       return <div />;
     }
     return (
-      <webview id='webframe' className='webframe' src={content.url} />
+      <div className='web-area'>
+        <webview id='webframe' className='webframe' src={content.url} />
+      </div>
     );
+  }
+
+  componentDidMount () {
+
+  }
+
+  componentDidUpdate (prevProps, prevState) {
   }
 }
 

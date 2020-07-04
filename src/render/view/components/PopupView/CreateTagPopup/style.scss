@@ -1,13 +1,13 @@
 @import '../../../scss/constants.scss';
-@import '../../../scss/mixin.scss';
+@import '../../../scss/popup.scss';
 
 .create-tag-popup {
-  @include createPopup($tagWidth - 20px, 100px);
-
   position: absolute;
   left: 10px;
   bottom: $tagAddHeight;
   z-index: 10;
+
+  @include createPopup($tagWidth - 20px, 100px);
 }
 
 .ctp-close {

@@ -1,44 +1,42 @@
+/*
+ * 这里定义的常量是全局调控的常量
+ * 全局布局宽度
+ * 全局颜色统一控制
+ */
+
+// tag部分的常量定义
 $tagWidth: 250px;
+$tagAddHeight: 30px; // 弹窗定位
+
 $tagBackColor: #2b2b2b;
-
-$tagTitleHeight: 40px;
-$tagTitleFontSize: 20px;
+$tagBorderRightColor: #323232;
 $tagTitleFontColor: #d3d3d3;
-
-$tagEmptyFontSize: 40px;
 $tagEmptyFontColor: #ffffff;
-
-$tagAddHeight: 30px;
-$tagAddFontSize: 14px;
+$tagLiActiveBackColor: #4a4a4a;
 $tagAddFontColor: #848484;
 
+// content部分的常量定义
 $contentWidth: 350px;
+$contentControlHeight: 50px; // 弹窗定位
+
 $contentBackColor: rgba(30, 30, 30, 0.9);
-
-$contentControlHeight: 50px;
-
-$contentInputWidth: 200px;
-$contentInputHeight: 30px;
 $contentInputBackColor: #262626;
-$contentInputFontSize: 18px;
 $contentInputFontColor: #6b6b6b;
-
-$contentQueryWidth: 28px;
-$contentQueryHeight: 28px;
 $contentQueryBackColor: #414141;
-$contentQueryFontSize: 16px;
 $contentQueryFontColor: #b3b3b3;
-
-$contentAddWidth: 28px;
-$contentAddHeight: 28px;
 $contentAddBackColor: #414141;
-$contentAddFontSize: 18px;
 $contentAddFontColor: #b3b3b3;
+$contentEmptyFontColor: #ffffff;
+$contentLiActiveBackColor: #454545;
+$contentLiNameFontColor: #dadada;
+$contentLiUrlFontColor: #b5b5b5;
+$contentLiTsFontColor: #b5b5b5;
 
-$contentEmptyFrotSize: 36px;
-$contentEmptyFrotColor: #ffffff;
-
-$createPopupPadding: 10px 10px 0px;
+// popup部分的常量定义
 $createPopupBackColor: #3a3a3a;
-$createPopupBorder: solid #4b4b4b 1px;
-$createPopupBorderRadius: 8px;
+$createPopupBorderColor: #4b4b4b;
+$createPopupCloseColor: #848484;
+$createPopupNameColor: #848484;
+$createPopupInputColor: #d4d4d4;
+$createPopupInputBorderColor: #414141;
+$createPopupConfirmColor: #848484;

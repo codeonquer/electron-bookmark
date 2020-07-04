@@ -1,5 +1,5 @@
 @import '../../../scss/constants.scss';
-@import '../../../scss//mixin.scss';
+@import '../../../scss/popup.scss';
 
 .create-content-popup {
   @include createPopup($contentWidth - 20px, 180px);

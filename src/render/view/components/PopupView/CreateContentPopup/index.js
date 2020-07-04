@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import PropTyeps from 'prop-types';
 import Popup from '../Popup';
 
 import './style.scss';
 
 class CreateContentPopup extends Component {
+  static propTypes = {
+    addContent: PropTyeps.func,
+    flipCreateContentPopup: PropTyeps.func
+  }
+
   constructor (props) {
     super(props);
 
