@@ -14,7 +14,7 @@ const {
 
 function getPaths () {
   const homePath = app.getPath('home');
-  const codeonquerPath = path.resolve(homePath, '.codeonquer/');
+  const codeonquerPath = path.resolve(homePath, 'codeonquer/');
   const bookmarkJsonPath = path.resolve(codeonquerPath, 'bookmark.json');
 
   return {

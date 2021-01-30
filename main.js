@@ -20,6 +20,8 @@ function createWindow () {
   win.webContents.openDevTools();
 }
 
+// app.allowRendererProcessReuse = true;
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // 部分 API 在 ready 事件触发后才能使用。
